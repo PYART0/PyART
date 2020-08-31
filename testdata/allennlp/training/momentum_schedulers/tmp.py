@@ -1,0 +1,4 @@
+import torch
+
+from allennlp.training.momentum_schedulers.momentum_scheduler import MomentumScheduler
+reveal_type(MomentumScheduler)
