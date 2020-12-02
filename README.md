@@ -5,7 +5,7 @@ Core code of PyART is in PyART/ directory, we give a detailed introduction to th
 
 **Some requirements for PyART**
 
-[If we want to use understand to get Json file]:
+[If you want to use understand to get Json file]:
 
 vim ~/.bashrc
 
@@ -15,7 +15,7 @@ export STIHOME="/[path]/understand/scitools"
 
 export LD_LIBRARY_PATH="/[path]/understand/scitools/bin/linux64"
 
-[This is not necessary if we donot use understand]
+[This is not necessary if you donot use understand]
 
 Python3.6+
 
