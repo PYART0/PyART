@@ -3,7 +3,7 @@ This is the dataSet and source code for PyART
 
 Core code of PyART is in PyART/ directory, we give a detailed introduction to the directory.This directory is for a simple demo for PyART in one fold among k-fold evaluation of within-project API recommendation. 
 
-An execuable demo and newer version is updated in https://github.com/PYART0/PyART-demo.
+An execuable demo and newer version is updated in https://github.com/PYART0/PyART-demo.[Recommended]
 
 **Some requirements for PyART**
 
