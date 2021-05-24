@@ -1276,38 +1276,7 @@ def get_rec_point(file):
 		for i in range(0,len(apis)):
 			candidates[apis[i]]=result[i][1]
 			
-		if re.match('List\[.*\]',ft):
-			candidates['append']=100.0
-			candidates['extend']=99.0
-		elif caller=='json':
-			candidates['loads']=100.0
-			candidates['dumps']=99.0
-			candidates['load']=98.0
-			candidates['dump']=97.0
-		elif ft=='str' and caller.strip()!='':
-			candidates['split']=100.0
-		elif ft=='str' and caller.strip()=='':
-			candidates['join']=100.0
-			candidates['format']=99.0
-		elif caller=='re' and '=' in line:
-			candidates['compile']=100.0
-		elif caller=='re'and 'if' in line:
-			candidates['match']=100.0
-		elif caller=='os.environ':
-			candidates['get']=100.0
-		elif caller=='warnings':
-			candidates['warn']=100.0
-		elif caller=='time' and '=' in line:
-			candidates['time']=100.0
-			candidates['sleep']=99.0
-		elif caller=='time':
-			candidates['time']=99.0
-			candidates['sleep']=100.0
-		elif caller=='copy':
-			candidates['deepcopy']=100.0
-			candidates['copy']=99.0
-		elif re.match('.*log.*=.*logging\..*',line):
-			candidates['getLogger']=100.0
+
 			
 			
 		cans=sorted(candidates.items(), key=lambda x: x[1], reverse=True)
